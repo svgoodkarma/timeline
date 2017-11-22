@@ -1,0 +1,141 @@
+<!-- Timeline generated in R 3.3.0 by googleVis 0.6.2 package -->
+<!-- Wed Nov 22 11:16:31 2017 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+ 
+// jsData 
+function gvisDataTimelineID1c6c1dc36bb0 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+"Publication",
+"Article: Indicator Development",
+new Date(2017,9,30,20,0,0),
+new Date(2017,10,29,19,0,0)
+],
+[
+"DataCollection",
+"Populate Index with Data and Produce Port Vulnerability Scores",
+new Date(2017,9,31,20,0,0),
+new Date(2017,10,19,19,0,0)
+],
+[
+"Publication",
+"Article: AHP to weight and aggregate indicators",
+new Date(2017,10,19,19,0,0),
+new Date(2018,0,30,19,0,0)
+],
+[
+"Dissertation",
+"Dissertation: Write Intro & Conclusion",
+new Date(2017,10,20,19,0,0),
+new Date(2018,0,31,19,0,0)
+],
+[
+"Dissertation",
+"Draft-Copy of Dissertation to Committee",
+new Date(2018,1,8,19,0,0),
+new Date(2018,1,11,19,0,0)
+],
+[
+"Dissertation",
+"Defense-Copy of Dissertation to Committee",
+new Date(2018,1,27,19,0,0),
+new Date(2018,1,28,19,0,0)
+],
+[
+"Dissertation",
+"Oral Defense of Dissertation",
+new Date(2018,2,18,20,0,0),
+new Date(2018,2,19,20,0,0)
+],
+[
+"GradSchool",
+"Final Dissertation to Grad School",
+new Date(2018,3,12,20,0,0),
+new Date(2018,3,13,20,0,0)
+],
+[
+"GradSchool",
+"Deadline to Submit Final Copy",
+new Date(2018,3,18,20,0,0),
+new Date(2018,3,19,20,0,0)
+] 
+];
+data.addColumn('string','Task Type');
+data.addColumn('string','Milestone');
+data.addColumn('datetime','Start');
+data.addColumn('datetime','Due');
+data.addRows(datajson);
+return(data);
+}
+ 
+// jsDrawChart
+function drawChartTimelineID1c6c1dc36bb0() {
+var data = gvisDataTimelineID1c6c1dc36bb0();
+var options = {};
+options["height"] = 1000;
+options["timeline"] = {groupByRowLabel:false};
+
+
+    var chart = new google.visualization.Timeline(
+    document.getElementById('TimelineID1c6c1dc36bb0')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+ 
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "timeline";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartTimelineID1c6c1dc36bb0);
+})();
+function displayChartTimelineID1c6c1dc36bb0() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+ 
+// jsFooter
+</script>
+ 
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartTimelineID1c6c1dc36bb0"></script>
+ 
+<!-- divChart -->
+  
+<div id="TimelineID1c6c1dc36bb0" 
+  style="width: automatic; height: 1000;">
+</div>
